@@ -56,8 +56,8 @@ class AuthorSeeder extends Seeder
                 $given = $exploded[1] ?? null;
                 $company = $author['company'] ?? false;
                 $newAuthor = [
-                    'given_names' => trim($given),
-                    'family_names' => trim($family),
+                    'given_name' => trim($given),
+                    'family_name' => trim($family),
                     'company' => $company,
 
                     'created_at' => now(),
